@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo&display=swap');
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.2;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ol {
+    padding-left: 1.4em;
+    list-style: decimal;
+}
+ul {
+    padding-left: 1.4em;
+    list-style: square;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+/* end reset browser styles */
+
+body{
+    margin: 1px;
+    background-image: url("image/farmers-markets.jpg");
+    background-attachment: fixed;
+    font-family: "Aleo", "Roboto Light", sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.modal{
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+.mContent{
+    font-size: 1.5em;
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    border: 2px solid skyblue;
+    box-sizing: border-box;
+    background-color: snow;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    animation-name: modalAnimation;
+    animation-duration: 1s;
+}
+
+.mContent li{
+    margin-bottom: 5px;
+}
+
+#close2{
+    margin-top: 10px;
+    color: darkred;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#close2:hover{
+    text-decoration: none;
+    color: skyblue;
+    cursor: pointer;
+}
+
+#xOut{
+    float: right;
+    color: red;
+    font-size: 24px;
+}
+
+#xOut:hover, #xOut:focus{
+    color: darkred;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.grid{
+    height: 640px;
+    width: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto -69px;
+    border: 2px solid skyblue;
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+}
+
+.start{
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    top: -300px;
+    border: 1px solid skyblue;
+}
+
+.start div {
+    text-shadow:5px 5px skyblue;
+    color: snow;
+    font-size: 4em;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.start button{
+    margin: auto;
+    width: 100%;
+    font-size: 4em;
+    color: darkblue;
+    background-color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.start button:hover{
+    color: gold;
+    text-decoration: none;
+}
+
+.grid div{
+    height: 80px;
+    width: 80px;
+    background-color: white;
+}
+
+#moves{
+    font-weight: bold;
+    color: darkgrey;
+    background-color: lavenderblush;
+    font-size: 2.6em;
+    padding: 5px;
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+em{
+    font-size: 2em;
+    font-weight: bold;
+    color: darkred;
+}
+
+#score{
+    font-weight: bold;
+    color: grey;
+    background-color: lavenderblush;
+    font-size: 2em;
+    padding: 5px;
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+#rounds{
+    font-weight: bold;
+    color: grey;
+    background-color: lavenderblush;
+    font-size: 2em;
+    padding: 5px;
+    width: 180px;
+}
+
+#tracker{
+    color: deepskyblue;
+    font-size: 1.5em;
+    margin: 0 auto;
+    background-color: lavenderblush;
+}
+
+.scoreKeepers{
+    float: left;
+}
+
+.trackers{
+    float: right;
+}
+
+#instruct{
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#quit{
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+#target{
+    font-weight: bold;
+    color: green;
+    background-color: lavenderblush;
+    font-size: 2em;
+    padding: 5px;
+    width: 180px;
+    margin-top: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes modalAnimation {
+    from{top: -200px; opacity: 0.1}
+    to{top: 0; opacity: 1}
+}

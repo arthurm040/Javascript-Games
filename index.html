@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farmers Market</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js"></script>
+</head>
+<body>
+
+<div class="content">
+    <div class="modal">
+        <div class="mContent">
+            <span id="xOut" class="close">&timesb;</span>
+            <h1>Welcome to your Local Farmers Market</h1>
+            <ul>
+                <li>Any combination like this in a vertical or horizontal line <img src="image/Banana_50.png" alt=""> <img src="image/Banana_50.png" alt=""> <img src="image/Banana_50.png" alt=""> will be erased and added to your score.</li>
+                <li>Combining 4 items will add 4 to your score and create this item  <img src="image/fruitcup_50.png" alt="">.</li>
+                <li>Combining 5 items will add 5 to your score and create this item <img src="image/smoothies_50.png" alt="">.</li>
+                <li>Any <em>L</em> shape or <em>✞</em> shaped combination will create this item <img src="image/basket_50.jpg" alt="">.</li>
+                <li>Combining the special items create effects that really increase your score while giving you extra moves if deleted because of an explosion.</li>
+                <li>For example this item <img src="image/basket_50.jpg" alt=""> automatically explodes and removes its vertical and horizontal neighbors.</li>
+                <li> (hint) 👀 I would definitely combine those <img src="image/smoothies_50.png" alt=""> <img src="image/fruitcup_50.png" alt=""> or this <img src="image/smoothies_50.png" alt=""> with anything else.</li>
+                <li>As expected there is a limited amount of moves and a target score.</li>
+            </ul>
+            <p class="close" id="close2">Let's Start!</p>
+        </div>
+    </div>
+
+    <div class="scoreKeepers">
+        <div id="score"></div>
+        <div id="rounds"></div>
+    </div>
+
+<div class="trackers">
+    <div id="moves"></div>
+        <div id = tracker>
+            <p id="1"></p>
+            <p id="2"></p>
+            <p id="3"></p>
+            <p id="4"></p>
+            <p id="5"></p>
+        </div>
+    <div id=target></div>
+</div>
+
+    <div class="grid"></div>
+    <div class="start"></div>
+
+    <div id="instruct">
+    </div>
+
+    <div id="quit"></div>
+
+
+</div>
+</body>
+</html>
