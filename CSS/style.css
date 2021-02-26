@@ -39,7 +39,7 @@ q:before, q:after {
 
 body{
     margin: 1px;
-    background-image: url("image/farmers-markets.jpg");
+    background-image: url("../image/farmers-markets.jpg");
     background-attachment: fixed;
     font-family: "Aleo", "Roboto Light", sans-serif;
 }
